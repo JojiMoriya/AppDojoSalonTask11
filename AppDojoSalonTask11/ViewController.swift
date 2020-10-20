@@ -11,16 +11,12 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var prefectureLabel: UILabel!
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
+   
     
     @IBAction func changeLabel(segue: UIStoryboardSegue) {
         let tableVC = segue.source as? TableViewController
         prefectureLabel.text = tableVC?.prefectureLabel
         
-//        print(prefectureLabel.text!)
     }
 
 
