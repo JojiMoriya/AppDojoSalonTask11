@@ -16,6 +16,9 @@ class ViewController: UIViewController {
     @IBAction func changeLabel(segue: UIStoryboardSegue) {
         let tableVC = segue.source as? TableViewController
         prefectureLabel.text = tableVC?.prefectureLabel
+    }
+    
+    @IBAction func cancelButtonPressed(segue: UIStoryboardSegue) {
         
     }
 
